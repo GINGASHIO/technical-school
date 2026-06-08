@@ -128,6 +128,10 @@ svg {
   white-space: nowrap;
 }
 
+.header-nav .nav-form {
+  color: var(--yellow);
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -942,7 +946,33 @@ p {
   }
 
   .header-nav {
+    justify-content: flex-start;
+    gap: 8px;
+    overflow-x: auto;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.78rem;
+    scrollbar-width: none;
+  }
+
+  .header-nav::-webkit-scrollbar {
     display: none;
+  }
+
+  .header-nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 34px;
+    padding: 0 10px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.055);
+  }
+
+  .header-nav .nav-form {
+    background: var(--yellow);
+    border-color: var(--yellow);
+    color: #080808;
   }
 
   .hero-shell,
@@ -958,7 +988,7 @@ p {
 
   .hero-shell {
     min-height: auto;
-    padding-top: 84px;
+    padding-top: 118px;
   }
 
   .hero-card {
@@ -1004,7 +1034,7 @@ p {
   }
 
   .hero {
-    padding: 102px 18px 0;
+    padding: 132px 18px 0;
   }
 
   .hero-bg {
